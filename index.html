@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYJ A LA VEZ</title>
+    <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ocultar_juegos.css">
+    <script type="text/javascript" src="js/oculta.js"></script>
+    <script type="text/javascript" src="js/leerMas.js"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <span>AyJ</span> A La Vez</a>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="menu-navegacion">
+                <a href="#inicio">inicio</a>
+                <a href="#juegos">juegos</a>
+                <a href="#caracteristicas">Caracteristicas</a>
+                <a href="#sobre los creadores">Sobre Nosotros</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+    </header>
+    <main>
+    <section class=" inicio" id="inicio">
+            <div class="imag">
+                <h1 class="titulo">Aprende Y Juega A La Vez<br>Con Nosotros</h1>
+                <div>
+                    <a class="btn" href="#juegos">Empezar A Jugar!</a>
+                </div>
+                <p class="copy">Aprende Ingles Jugando Con AyJ a La VEZ.</p>
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,88.14 C149.99,150.00 292.61,22.03 501.97,91.11 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: whitesmoke;"></path></svg></div>
+    </section>
+
+
+
+    <section class="juegos" id="juegos">
+
+        <h1 class="subtitulo">Game's Zone</h1>
+
+        <div class="caja-contenedor" id="divContenedor" >
+            <div class="caja">
+                <h3 class="titulo1">NUMBERS</h3>
+                <img src="img/numeros.jpg" alt="#" width="50%">
+                <p>this is the numbers section, if you want to learn numbers in english we have three fun games for you.</p>
+                <h3 class="titulo1">Available Games</h3>
+                <a onclick="myFunction()" class="btn">Hangman Game</a>
+                <a onclick="ocultaJuegoDos()" class="btn">Memory Game</a>
+                <a onclick="ocultaJuegoTres()" class="btn">Pick Game</a>
+            </div>
+
+            <div class="caja" >
+                <h3 class="titulo1">WORDS</h3>
+                <img src="img/palabras.jpg" width="50%" alt="#">
+                <p>this is the words section, if you want to learn words in english we have three fun games for you.</p>
+                <h3 class="titulo1">Available Games</h3>
+                <a onclick="ocultaJuegoAhorcaDos()" class="btn">Hangman Game</a>
+                <a onclick="ocultaJuegoDosColors()" class="btn">Memory Game</a>
+                <a onclick="ocultaJuegoSelectDos()" class="btn">Pick Game</a>
+            </div>
+
+            <div class="caja" >
+                <h3 class="titulo1">COLORS</h3>
+                <img src="img/colores.jpg" alt="#"  width="50%" >
+                <p>this is the colors section, if you want to learn colors in english we have three fun games for you.</p>
+                <h3 class="titulo1">Available Games</h3>
+                <a onclick="ocultaJuegoTresColors()" class="btn">Hangman Game</a>
+                <a onclick="ocultaJuegoMemoryTres()" class="btn">Memory Game</a>
+                <a onclick="ocultaJuegoSelectTres()" class="btn">Pick Game</a>
+            </div>
+        </div>
+    <div class="container">
+        <div class="textos" id="divJuegos" style="display: none; " >
+            <iframe class="ahorcado" src="juego_uno_/ahorcado.html" ></iframe>
+            <div class="regreboton">
+                <a onclick="myFunction()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuego" style="display: none;">
+            <iframe class="memoria" src="memorama-main/index.html"></iframe>
+            <div class="regreboton">
+                <div class="regreboton">
+                    <a onclick="ocultaJuegoDos()" class="regresar"> <<< Regresar</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuegoTres" style="display: none;">
+            <iframe class="seleccion" src="Quiz Application with Timer/index.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoTres()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+
+
+
+        <div class="textos" id="ocultaJuegoAhorcaDos" style="display: none;">
+            <iframe class="seleccion" src="juego_uno_/ahorcado_words.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoAhorcaDos()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuegoDosColors" style="display: none;">
+            <iframe class="seleccion" src="memorama-main/index_words.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoDosColors()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuegoMemoryTres" style="display: none;">
+            <iframe class="seleccion" src="memorama-main/index_colors.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoMemoryTres()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuegoSelectDos" style="display: none;">
+            <iframe class="seleccion" src="Quiz Application with Timer/index_word.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoSelectDos()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+        <div class="textos" id="ocultaJuegoSelectTres" style="display: none;">
+            <iframe class="seleccion" src="Quiz Application with Timer/index_colors.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoSelectTres()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+
+
+        <div class="textos" id="ocultaJuegoTresColors" style="display: none;">
+            <iframe class="seleccion" src="juego_uno_/ahorcado _colors.html"></iframe>
+            <div class="regreboton">
+                <a onclick="ocultaJuegoTresColors()" class="regresar"> <<< Regresar</a> 
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="contenedor Caracteristicas" id="caracteristicas">
+        <h1 class="subtitulo">CARACTERISTICAS DE LA PAGINA WEB</h1>
+        <div class="texto">
+            <p class="contexto">
+                SALUDOS DESDE AYJ A LA VEZ. <br>
+                -Esta pagina web es una version de juegos clasicos conocidos,puedes elegir el contenido que desees practicar y al mismo tiempo divertirte, en la segunda seccion llamada game's zone econtraras
+                3 contenidos diferentes las cuales son numeros, palabras y colores. y de la misma manera tres juegos diferentes en el puedes distraerte.
+                <br>
+                - Esta diseñada para ayudar a niños y niñas aprender del idioma inglés de una manera dinámica. <br>
+                - La página web ayuda a que los niños se diviertan al mismo tiempo de aprender inglés.
+                <br>
+                - Diseñada para fortalecer el conocimiento de niños y jovenes.
+                <br>
+                Espero Y te diviertas jugando a este juego y de la misma manera que puedas aprender y mejorar tu ingles al mismo tiempo.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="contenedor autores" id="sobre los creadores">
+        <h1 class="subtitulo">SOBRE NOSOTROS</h1>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3 class="titulo1">RONALD CHASIPANTA</h3>
+                <img src="img/Ronald.jpg">
+                <p class="texto"> NOMBRES: Ronald Winther Chasipanta Baraja<br>EDAD: 19 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Cuarto <br>CORREO: ronald.chasipanta3834@utc.edu.ec<br>NACIONALIDAD: Ecuatoriano</p>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo1">NATHALY CHAVEZ</h3>
+                <img src="img/Nathaly (1).jpeg" >
+                <p class="texto"> NOMBRES: Nathaly Beatriz Chavez Garcia<br>EDAD: 20 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                    <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Cuarto <br>CORREO: nathaly.chavez8393@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo1">ANLLY CANDELO</h3>
+                <img src="img/Anlly.jpeg" >
+                <p class="texto"> NOMBRES: Anlly Nela Candelo Moya<br>EDAD: 29 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                    <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Cuarto <br>CORREO: anlly.candelo2514@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo1">MICHELLE ANCHUNDIA</h3>
+                <img src="img/anchundia.jpg" >
+                <p class="texto"> NOMBRES: Anchundia Peña Denisse Michelle<br>EDAD: 20 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                    <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Cuarto <br>CORREO: denisse.anchundia5434@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+            </div>
+        </div>
+    </section>
+
+        <!--INICIO DE SECCION COMENTARIO-->
+        <section class="contenedor">
+            <h3>SECCIÓN DE COMENTARIOS Y OPINIONES</h3>
+            <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ayj-a-la-vez.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <!--FIN DE LA SECCION COMENTARIO-->
+        </section>
+
+    <section class="footer" id="footer">
+        
+        <div class="footer">
+            <div class="caja-contenedor">
+                <div class="caja">
+                    <h3 >Sobre AyJ A La Vez</h3>
+                    <p> Página web desarrollada con el objetivo de aprender y a mejorar el idioma inglés de una manera divertida.</p>
+                </div>
+
+                <div class="caja">
+                    <h3>Contactos</h3>
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100014190819441">Facebook</a>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="http://instagram.com/ronaldjr_2002?utm_source=qr">Instagram</a>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-telegram"></i>
+                        <a href="https://t.me/593979114187">Telegram</a>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/qr/PSN73QYUZ622K1">Whatsapp</a>
+                    </div>
+                </div>
+
+                <div class="caja">
+                    <h3>Mas Informacion</h3>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p>(593) 979114187 <br>(593) 979457551</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p>ronald.chasipanta3834@utc.edu.ec <br>nathaly.chavez8393@utc.edu.ec</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ecuador - Cotopaxi - La Mana</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <h1 class="creditos">
+                &copy copyright @ 2022 AYJ A La Vez
+            </h1>
+        </div>
+    </section>
+</main>
+</body>
+</html>

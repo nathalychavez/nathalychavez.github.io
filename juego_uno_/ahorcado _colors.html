@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="caja-contenedor">
+        <div class="caja1" >
+            <img src="img/altavozOff.png" alt="altavoz" id="altavoz" onclick="controlMusicaFondo()">
+            <h1 id="pista"></h1>
+            <h2 class="intentosH2">
+              <span id="intentos"></span>/<span id="intentosOriginales"></span>
+            </h2>
+            <h2 id="puntuacionH2"></h2>
+            <h2 id="resultado"><pre></pre></h2>
+    
+          <div class="imagenDiv">
+            <img src="img/svg/horca.svg" alt="muñeco" id="imagen" >
+          </div>
+          <div class="caja">
+            <button type="button" class="tecla" id="teclaq" value="Q" onclick="comprobarTecla('q');">Q</button>
+            <button type="button" class="tecla" id="teclaw" value="W" onclick="comprobarTecla('w');">W</button>
+            <button type="button" class="tecla" id="teclae" value="E" onclick="comprobarTecla('e');">E</button>
+            <button type="button" class="tecla" id="teclar" value="R" onclick="comprobarTecla('r');">R</button>
+            <button type="button" class="tecla" id="teclat" value="T" onclick="comprobarTecla('t');">T</button>
+            <button type="button" class="tecla" id="teclay" value="Y" onclick="comprobarTecla('y');">Y</button>
+            <button type="button" class="tecla" id="teclau" value="U" onclick="comprobarTecla('u');">U</button>
+            <button type="button" class="tecla" id="teclai" value="I" onclick="comprobarTecla('i');">I</button>
+            <button type="button" class="tecla" id="teclao" value="O" onclick="comprobarTecla('o');">O</button>
+            <button type="button" class="tecla" id="teclap" value="P" onclick="comprobarTecla('p');">P</button>
+            <button type="button" class="tecla" id="teclaa" value="A" onclick="comprobarTecla('a');">A</button>
+            <button type="button" class="tecla" id="teclas" value="S" onclick="comprobarTecla('s');">S</button>
+            <button type="button" class="tecla" id="teclad" value="D" onclick="comprobarTecla('d');">D</button>
+            <button type="button" class="tecla" id="teclaf" value="F" onclick="comprobarTecla('f');">F</button>
+            <button type="button" class="tecla" id="teclag" value="G" onclick="comprobarTecla('g');">G</button>
+            <button type="button" class="tecla" id="teclah" value="H" onclick="comprobarTecla('h');">H</button>
+            <button type="button" class="tecla" id="teclaj" value="J" onclick="comprobarTecla('j');">J</button>
+            <button type="button" class="tecla" id="teclak" value="K" onclick="comprobarTecla('k');">K</button>
+            <button type="button" class="tecla" id="teclal" value="L" onclick="comprobarTecla('l');">L</button>
+            <button type="button" class="tecla" id="teclañ" value="Ñ" onclick="comprobarTecla('ñ');">Ñ</button>
+            <button type="button" class="tecla" id="teclaz" value="Z" onclick="comprobarTecla('z');">Z</button>
+            <button type="button" class="tecla" id="teclax" value="X" onclick="comprobarTecla('x');">X</button>
+            <button type="button" class="tecla" id="teclac" value="C" onclick="comprobarTecla('c');">C</button>
+            <button type="button" class="tecla" id="teclav" value="V" onclick="comprobarTecla('v');">V</button>
+            <button type="button" class="tecla" id="teclab" value="B" onclick="comprobarTecla('b');">B</button>
+            <button type="button" class="tecla" id="teclan" value="N" onclick="comprobarTecla('n');">N</button>
+            <button type="button" class="tecla" id="teclam" value="M" onclick="comprobarTecla('m');">M</button>
+            <div>
+                <button class="boton" id="BotonReiniciar" onclick="reiniciarPartida();">Reiniciar</button>
+              </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/colors.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+    --oscuro:#3a0318;
+    --rubi:#E0115f;
+    --degradado:linear-gradient(90deg, var(--rubi),var(--oscuro));
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    
+}
+
+*::selection{
+    background:var(--rubi);
+    color:white;
+}
+
+
+body{
+    background: whitesmoke;
+}
+
+.caja-contenedor{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background: var(--degradado);
+}
+
+.caja-contenedor .caja{
+  width: 100%;
+  background: rgb(255, 238, 238);
+  border: .1rem solid rgba(0,0,0,.2);
+  box-shadow: 0px 3px 5px rgba( 15, 15, 15, .5);
+  border-radius: .5rem;
+  text-align: center;
+  transition: .2s linear;
+}
+
+.caja-contenedor .caja button{
+  display: inline-block;
+  margin-top: .5em;
+  padding: .4rem .8rem;
+  border-radius: 3rem;
+  background: var(--rubi);
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+  transition: all .3s linear;
+}
+.caja-contenedor .caja button:hover{
+  background-color: whitesmoke;
+  color: var(--oscuro);
+}
+
+.caja-contenedor .caja button:active{
+  background-color: white;
+  color: var(--rubi);
+
+}
+
+.caja-contenedor .caja button .tecla{
+  width: 3%;
+  height: 10px;
+
+}
+
+.caja-contenedor .caja1 .musica{
+    
+    width: 1000px;
+    left: 75px;
+}
+
+
+.caja-contenedor .caja1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 30rem;
+    margin: 1rem;
+    padding: .3rem .3rem;
+    text-align: center;
+    background-color: var(--rubi);
+    border: 4px var(--degradado);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 23px -2px rgb(78, 29, 59), inset 5px 5px 56px 4px var(--oscuro);
+    height: auto;
+}
+
+
+#altavoz {
+    top: 15px;
+    position: fixed;
+    width: 5%;
+  }
+  
+  #pista {
+    -webkit-text-stroke: 1px #000;
+    color: #f0e892;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2em;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-transform: uppercase;
+    animation: pista 1s;
+  }
+  
+  #puntuacionH2 {
+    font-family: 'Bitter', serif;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    width: fit-content;
+  }
+  
+  #resultado {
+    font-family: 'Bitter', serif;
+    font-size: 1.5em;
+  }
+  .intentosH2 span {
+    color: #FFF;
+    font-family: 'Gorditas', cursive;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  
+  .intentosH2 {
+    color: #FFF;
+    font-family: 'Gorditas', cursive;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    transform: rotate(20deg);
+    width: fit-content;
+  }
+  .caja-contenedor .caja1 #imagen {
+    margin-top: 1rem;
+    width: 8%;
+  }
+  
+  .pistaIntentosDiv h1 {
+    float: left;
+    margin-left: 20%;
+  }
+  
+  .pistaIntentosDiv h2 {
+    float: left;
+    margin-top: 3%;
+    width: 31%;
+  }
+  
+  .pistaIntentosDiv {
+    overflow: hidden;
+    padding-left: 12%;
+  }
